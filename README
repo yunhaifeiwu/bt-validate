@@ -1,4 +1,4 @@
-这是一个基于bootstap的检验组件，改编自网络。 利用了bootstap的popover弹出组件
+这是一个基于bootstrap的检验组件，改编自网络。 利用了bootstrap的popover弹出组件
 显示出错信息，允许用户在表单组件中使用自定义验证规则。没有考虑 通过ajax方式
 服务器返回的验证信息情况。 用户在ajax下，可通过 类似的语法进行设置显示：
 el.next().popover("show");  至于其他，请按js操作dom节点的方式修改popover的

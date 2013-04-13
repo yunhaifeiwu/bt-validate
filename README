@@ -1,0 +1,35 @@
+这是一个基于bootstap的检验组件，改编自网络。 利用了bootstap的popover弹出组件
+显示出错信息，允许用户在表单组件中使用自定义组件。没有考虑 通过ajax方式
+服务器返回的验证信息情况。 用户在ajax下，可通过 类似的语法进行设置显示：
+el.next().popover("show");  至于其他，请按js操作dom节点的方式修改popover的
+显示内容
+
+使用：
+
+1 引入 jQuery 和 Bootstrap 库，
+
+2  然后绑定需要验证的表单 $('#form').validation()
+  例：
+	<script type="text/javascript">
+		$('#zedit').validation();
+	</script>
+
+3 表单中两种使用 示例：
+  <input  type="text"  btvd-type="mail"
+	 btvd-class='btvdclass' 	btvd-err="data-邮箱格式不正确！"   >    
+ 上面，使用了js组件中 预定义的mail验证、自定义了popover对话框的样式、自定义出错信息
+
+	<input  type="text" placeholder="a…" btvd-el='/^[0-9]\d*$/' 
+		btvd-class='btvdclass' btvd-err="data-必须输入数字！" 
+	>   
+  上面中，用户使用了自已的正则验证、自定义了popover对话框的样式、自定义出错信息。
+  
+
+
+
+，最后只需要在html代码中指定相关的属性即可。
+原作者见：
+[Validation-for-Bootstrap](http://fatesheep.github.com/Validation-for-Bootstrap/)
+
+本地址见：
+https://github.com/yunhaifeiwu/bt-validate/

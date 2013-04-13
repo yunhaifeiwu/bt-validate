@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="utf-8">
+    <head>
+        <title>hello world</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../bootstrap/css/bootstrap.css" rel="stylesheet"  media="screen"/>        
+        <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet"/>
+
+        <style type="text/css">
+            /*自定义样式，实现个性化页面*/
+            .show-grid {
+                margin-left: 10px;
+                margin-top: 10px; margin-bottom: 20px;     
+                width:720px;      
+                border:1px solid #4E7590;
+                background-color: #F5F5F5;    
+            } 
+            .show-grid legend{
+                background-color: #108AC6;  
+                
+                border:1px solid #fff;
+                width:718px;   
+                text-align: center;
+            }
+             
+            .myright{
+                float:right;
+            }
+            .contextbox{
+                padding: 20px 0px 30px 30px;
+            }
+            .bottombox{
+                background-color: #D5D5D5;  
+                border:1px solid #fff;
+                width:718px;     
+            }
+            .btvdclass{
+                border-color:#FF0000;
+                color:#FF0000;
+                font-weight:normal;
+            }
+        </style>
+        <script src="../js/jquery-1.9.1.min.js" type="text/javascript"> </script>
+        <script src="../bootstrap/js/bootstrap.js" type="text/javascript" > </script>
+        <script src="../js/validation/bt-validate.js" type="text/javascript"></script> 
+
+    </head>
+    <body>    
+    
+        <div id="myModal"  class="modal" style="width:800px;left:40%;"  >
+            <div class="modal-header">
+                <button type="button" class="close"  data-dismiss="modal" aria-hidden="false">&times;</button>
+                <h3>对话框标题</h3>
+            </div>
+            <div class="modal-body">
+               
+                <form id="zedit" class="show-grid form-inline">
+                 
+                    <fieldset>
+                        
+                        <div class="contextbox">
+                            
+                            <div class="row "> 
+                                <div class="span3">
+                                    <label>Label aaaaaaname</label>
+                                    <input id="psw" class=" "  type="text"  btvd-type="mail"
+                                    btvd-class='btvdclass'
+                                    btvd-err="data-邮箱格式不正确！"   >    
+                                </div>
+                                <div class="span3">
+                                    <label>Label aname</label>
+                                    <input class=""  type="text" placeholder="a…" btvd-el='/^[0-9]\d*$/' 
+                                    btvd-class='btvdclass'
+                                    btvd-err="data-必须输入数字！" 
+                                    >   
+                                </div>
+                            </div><br>
+                            <div class="row "> 
+                                <div class="span3">
+                                    <label >Label bbname</label>
+                                    <input class="hori-margin" type="text" placeholder="Type something…">
+                                </div>
+                                <div class="span3">   
+                                    <label >Label bbbbbname</label>
+                                    <input id="dd" class="hori-margin" type="text" placeholder="Type something…">
+                                 </div>   
+                             </div>
+                             
+                        </div>  
+                        <div class="bottombox">
+                            <div class="row contextbox "> 
+                                 
+                                    <button type="submit" 
+                                       class="btn hori-margin  myright  ">Submitddddd</button>
+                                    
+                                    <button type="submit" class="btn hori-margin myright ">Submitzzz</button>
+                                 
+                            </div> 
+                        </div>
+                            
+                    </fieldset>
+                </form>
+                
+                
+            </div>
+            
+        </div>
+        
+       
+        
+        
+        
+        <script type="text/javascript">
+            $('#zedit').validation();
+        </script>
+       
+
+
+    </body>
+</html>

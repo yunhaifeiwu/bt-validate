@@ -25,9 +25,6 @@ el.next().popover("show");  至于其他，请按js操作dom节点的方式修�
   上面中，用户使用了自已的正则验证、自定义了popover对话框的样式、自定义出错信息。
   
 
-
-
-，最后只需要在html代码中指定相关的属性即可。
 原作者见：
 [Validation-for-Bootstrap](http://fatesheep.github.com/Validation-for-Bootstrap/)
 
